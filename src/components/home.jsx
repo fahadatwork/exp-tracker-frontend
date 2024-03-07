@@ -8,6 +8,8 @@ import Transactions from "./transactions";
 import { GoKebabHorizontal } from "react-icons/go";
 import CircularProgress from "./circularProgress";
 import { useState } from "react";
+import SkeletonLoader from "./skeletonLoader";
+import BalLoader from "./balLoader";
 
 
 
@@ -42,11 +44,13 @@ function Home() {
         </div>
         <div className="flex flex-row gap-8 m-[25px]">
           <ChartBox />
-          <Balance />
+            <Balance />
+           {/* <BalLoader /> */}
         </div>
 
         <div className="flex flex-row gap-8 m-[25px]">
           <Transactions />
+      
 
           <div className="w-[600px] h-[350px] bg-white rounded-lg  shadow-md">
             <div className="flex flex-row justify-between">

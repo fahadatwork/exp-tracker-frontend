@@ -4,8 +4,8 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 import Chip from "./chip";
 import moment from "moment";
 
-const TransactionBanner = ({ type, balance, name }) => {
-  const transactionDate = moment().format("MMMM Do YYYY . h:mm A");
+const TransactionBanner = ({ type, balance, name, date }) => {
+  const transactionDate = moment(date).format("MMMM Do YYYY . h:mm A");
 
   return (
     <>
